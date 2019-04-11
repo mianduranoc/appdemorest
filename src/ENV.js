@@ -12,7 +12,8 @@ export const ENVIRONMENT={
             NAME_ROUTE:'/api/events',
             ACTIONS:
             {
-                GET_ZONES_LIST:'/getzoneslist'
+                GET_ZONES_LIST:'/getzoneslist',
+                POST_ZONES:'/postzone'
             }
         }
     }
