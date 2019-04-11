@@ -48,8 +48,26 @@ export const FORMATS_FOR_DATE_AND_TIME=(date=new Date())=>{
             SECONDS:date.getSeconds()
         },
         DAY_WEEK:{
-            NUMBER:date.getDate()//,
-            //TEXT:GET_DAY_WEEK_TEXT(date.getDay())
+            NUMBER:date.getDate(),
+            TEXT:GET_DAY_WEEK_TEXT(date.getDay())
         }
+    }
+};
+const GET_DAY_WEEK_TEXT=(day)=>{
+    switch (day) {
+        case 1:
+            return "LUNES";
+        case 2:
+            return "MARTES";
+        case 3:
+            return "MIERCOLES";
+        case 4:
+            return "JUEVES";
+        case 5:
+            return "VIERNES";
+        case 6:
+            return "SABADO";
+        case 7:
+            return "DOMINGO";
     }
 };
