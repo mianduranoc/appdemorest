@@ -2,7 +2,8 @@ export const ENVIRONMENT={
     SERVER_PORT:process.env.PORT||3001,
     BD_URL_CONNECTION: {
         TESTING:'',
-        DEVELOPING: 'mongodb+srv://admin:Admin12345@appdemorest-arilk.mongodb.net/eva_soft?retryWrites=true',
+        //DEVELOPING: 'mongodb+srv://admin:Admin12345@appdemorest-arilk.mongodb.net/eva_soft?retryWrites=true',
+        DEVELOPING:'mongodb://localhost:27017/eva_soft',
         PRODUCTION:''
     },
     ROUTES_MAIN_MODULES:{
@@ -13,7 +14,9 @@ export const ENVIRONMENT={
             ACTIONS:
             {
                 GET_ZONES_LIST:'/getzoneslist',
-                POST_ZONES:'/postzone'
+                POST_ZONES:'/postzone',
+                DELETE_ZONE:'/deletezone/:id',
+                UPDATE_ZONE:'/updatezone/:id'
             }
         }
     }
